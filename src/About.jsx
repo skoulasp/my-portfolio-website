@@ -1,6 +1,7 @@
 import { forwardRef, useContext, useRef } from "react";
 import { LanguageContext } from "./App";
 import { motion, useScroll, useTransform } from "framer-motion";
+import ResumePDF from "../Petros_Skoulas_FrontEnd_Developer_Resume.pdf";
 
 const About = forwardRef((props, ref) => {
     const data = useContext(LanguageContext);
@@ -40,7 +41,7 @@ const About = forwardRef((props, ref) => {
                             </span>
                         </div>
                         <div className="action-btns">
-                            <a href="/Petros_Skoulas_FrontEnd_Developer_Resume.pdf" target="_blank" rel="noreferrer" className="resume-btn">
+                            <a href={ResumePDF} target="_blank" rel="noreferrer" className="resume-btn">
                                 {data.about.buttons.services}
                             </a>
                             <a href="#tech-stack" className="portfolio-btn">
