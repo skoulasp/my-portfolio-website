@@ -1,0 +1,126 @@
+footer {
+    font-size: 1.2rem;
+    grid-row: 3 / 4;
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(324deg, #110018 4%, transparent 4%) -37px 33px, linear-gradient(36deg, #110018 4%, transparent 4%) 43px 33px,
+        linear-gradient(72deg, #550044 8.5%, transparent 8.5%) 43px 33px, linear-gradient(288deg, #550044 8.5%, transparent 8.5%) -37px 33px,
+        linear-gradient(216deg, #550044 7.5%, transparent 7.5%) -37px 16px,
+        linear-gradient(144deg, #550044 7.5%, transparent 7.5%) 43px 16px, linear-gradient(324deg, #110018 4%, transparent 4%) 4px 73px,
+        linear-gradient(36deg, #110018 4%, transparent 4%) 84px 73px, linear-gradient(72deg, #550044 8.5%, transparent 8.5%) 84px 73px,
+        linear-gradient(288deg, #550044 8.5%, transparent 8.5%) 4px 73px, linear-gradient(216deg, #550044 7.5%, transparent 7.5%) 4px 56px,
+        linear-gradient(144deg, #550044 7.5%, transparent 7.5%) 84px 56px;
+
+    background-size: 80px 80px;
+    background-color: #110018;
+    color: #fff;
+    border-top: 4px solid #7e0065;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    div.footer-content {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        div.legal-links {
+            width: fit-content;
+            letter-spacing: 1px;
+            gap: 1px;
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 50px;
+            backdrop-filter: blur(1px);
+            a {
+                transition: all 0.3s;
+                color: #e042c1;
+                &:hover {
+                    color: #00d6d9;
+                }
+                &:active {
+                    color: #ffffff;
+                }
+
+                &.highlight {
+                    color: #00d6d9;
+                }
+            }
+        }
+        div.top-btn {
+            padding: 2px;
+            width: fit-content;
+            justify-self: center;
+            align-self: center;
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
+        }
+
+        .social-media {
+            grid-column: 3 / 4;
+            grid-row: 1 / -1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 50px;
+            svg {
+                width: 60px;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.1);
+                    filter: contrast(130%) saturate(120%);
+                }
+            }
+        }
+
+        div.top-btn {
+            backdrop-filter: blur(2px);
+            a {
+                background-color: #6000c091;
+                border-radius: 100px;
+                text-decoration: none;
+                color: #ff95ff;
+                padding: 10px;
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transition: all 0.3s;
+                &:hover {
+                    transform: translateY(-2px);
+                    background-color: #6000c0;
+                }
+                &:active {
+                    background-color: #8d00c0;
+                    transform: translateY(0px);
+                }
+            }
+        }
+
+        div.copyright {
+            width: fit-content;
+            justify-self: center;
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            color: #d3c3e2;
+            border-radius: 1000px;
+            align-self: center;
+            margin-bottom: 30px;
+            margin: 0 10px;
+            backdrop-filter: blur(1px);
+        }
+    }
+    ::selection {
+        background-color: hsl(47, 86%, 49%);
+        color: hsl(0, 0%, 0%);
+    }
+}

@@ -1,0 +1,191 @@
+section.services {
+    background-image: linear-gradient(to right, hsla(306, 100%, 12%, 0.5), hsla(306, 100%, 12%, 0.5)), url("../img/galaxy.jpg");
+    background-size: cover;
+    isolation: isolate;
+    background-position: bottom;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 100dvh;
+
+    div.heading-section {
+        width: 100%;
+        margin: 0;
+        height: 90px;
+        font-family: "Orbitron", sans-serif;
+        margin-bottom: 80px;
+        background-color: hsl(237.42deg 100% 63% / 50%);
+        text-align: center;
+        text-shadow: 1px 1px 1px #000000;
+        color: #fff;
+        font-size: calc(36 / 16 * 1rem);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            letter-spacing: 4px;
+            font-size: calc(32 / 16 * 1rem);
+        }
+    }
+    div.content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        row-gap: 80px;
+        column-gap: 20px;
+        padding: 0 20px;
+        padding-bottom: 80px;
+
+        article.services-wrapper {
+            box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            width: 580px;
+            min-width: 500px;
+            max-width: 100%;
+            min-height: 543px;
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            border-radius: 10px;
+            font-size: calc(20 / 16 * 1rem);
+            color: #fff;
+            transition: 0.5s;
+            &.wordpress {
+                background-image: linear-gradient(rgba(26, 72, 129, 0.7), rgba(26, 72, 129, 0.7)), url("../img/webdev.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &.react {
+                background-image: linear-gradient(rgba(45, 45, 45, 0.7), rgba(45, 45, 45, 0.7)), url("../img/react-bg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &.css {
+                background-image: url("../img/tailwind.png"), linear-gradient(rgba(130, 0, 147, 0.5), rgba(130, 0, 147, 0.5)),
+                    url("../img/random.jpg");
+                background-repeat: no-repeat;
+                background-position: 97% 95%, center, center;
+                background-size: 120px, cover, cover;
+            }
+
+            div.heading-area {
+                text-align: center;
+                padding: 40px 0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                letter-spacing: 2px;
+                text-shadow: 1px 1px 1px #000000;
+                h3 {
+                    font-size: calc(22 / 16 * 1rem);
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                &.wordpress {
+                    background-image: linear-gradient(rgba(26, 72, 129, 0.8), rgba(26, 72, 129, 0.8)), url("../img/wordpress.png"),
+                        url("../img/php.png");
+                    background-repeat: no-repeat;
+                    background-position: 98% 50%, 2% 50%;
+                    background-size: auto, auto 90%, auto 90%;
+                }
+
+                &.react {
+                    background-color: rgba(45, 45, 45);
+                    background-image: url("../img/react2.png"), url("../img/javascript3.png");
+                    background-repeat: no-repeat;
+                    background-position: 2% 50%, 98% 50%;
+                    background-size: 90px;
+                }
+                &.css {
+                    background-color: rgb(130, 0, 147);
+                    background-image: url("../img/sass.png"), url("../img/css.png");
+                    background-repeat: no-repeat;
+                    background-position: 3% 50%, 97% 50%;
+                    background-size: 105px, 75px;
+                }
+            }
+            div.body-content {
+                padding: 20px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                div.card-wrapper {
+                    border-radius: 10px;
+                    padding: 10px 5px;
+                    &.wordpress {
+                        background-color: rgba(26, 72, 129, 0.7);
+                    }
+
+                    &.react {
+                        background-color: rgba(45, 45, 45, 0.8);
+                    }
+                    &.css {
+                        background-color: rgba(130, 0, 147, 0.8);
+                    }
+
+                    ul.wp-list {
+                        list-style-type: "\1F449\2800";
+                        vertical-align: middle;
+                        margin: 0 30px;
+                        margin-top: 20px;
+                        li {
+                            position: relative;
+                            margin-bottom: 10px;
+                            li::before {
+                                content: "\1F449";
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.greek {
+        font-family: "Arial", sans-serif;
+    }
+    ::selection {
+        background-color: #bc00c0;
+        color: #fff;
+    }
+
+    &.blur::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        animation: blur 500ms ease-in forwards;
+    }
+    &.unblur::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        animation: unblur 500ms ease-in;
+    }
+}
+
+article h3.skills,
+article h3.services {
+    font-size: calc(26 / 16 * 1rem);
+}

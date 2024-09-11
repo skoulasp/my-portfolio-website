@@ -1,0 +1,322 @@
+{
+    "header": {
+        "logo": "site logo",
+        "menu_items": {
+            "home": "Home",
+            "about": "About",
+            "tech_stack": "Tech Stack",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "hamburger": {
+            "btn": ""
+        }
+    },
+    "home": {
+        "heading": "Hi 👋 I'm a Front-end Web Developer from Greece",
+        "image_caption": "Just a casual photo of me",
+        "cloud_text": "Hello and welcome! I’m a front-end web developer who loves building unique, beautiful web solutions that stand out. Let’s collaborate to make your web presence as beautiful as it deserves to be.",
+        "buttons": {
+            "contact": "Let's Connect",
+            "contact_emoji": "🤙",
+            "learn_more": "Who am I",
+            "learn_more_emoji": "🔎"
+        }
+    },
+    "about": {
+        "heading": "About ⚡ Me",
+        "paragraphs": [
+            "My name is Petros Skoulas, and I'm a junior front-end web developer from Greece. After completing my secondary education at the 9th General Lyceum of Amarousion, I pursued Information Technology (IT) studies at the American College of Greece - Deree, where I specialized in Software Development and I graduated in 2020. It was during my studies that I discovered my passion for web development, and since then, I have dedicated myself entirely to front-end web development.",
+            "Driven by a deep enthusiasm for crafting smooth, visually appealing, and intuitive web experiences, I immersed myself in mastering the core technologies of the modern web—HTML, CSS, and JavaScript. To stay current with the evolving front-end landscape, I adopted React, one of the leading front-end libraries, which has further refined my skills and ensured my adaptability in today’s fast-evolving tech ecosystem.",
+            "Given the widespread use of WordPress as the world’s leading CMS, I also invested time in understanding WordPress theme development. This expertise allows me to deliver custom solutions tailored to client needs while applying the best front-end web development practices. I’m highly committed to creating unique, custom WordPress themes that blend technical precision with creative design.",
+            "Equipped with a strong foundation and a constant desire to learn, I’m always eager to collaborate, tackle new challenges, and make meaningful contributions to the web development world."
+        ],
+        "buttons": {
+            "services": "View Resume",
+            "portfolio": "Skill Analysis"
+        }
+    },
+    "tech_stack": {
+        "title": "Technologies & Tools Summary",
+        "core_technologies": [
+            {
+                "title": "Core Technologies"
+            },
+            {
+                "technology": "React",
+                "description": "Although I'm still relatively new to React, I've quickly grasped its core concepts, including React hooks, the JSX syntax, and component-based architecture. I’m confident in my ability to use React effectively in my projects and continue to deepen my expertise with each new endeavor. In fact, this portfolio website was built with React, and I have no regrets about choosing it."
+            },
+            {
+                "technology": "JavaScript",
+                "description": "JavaScript is the foundation of front-end web development, empowering developers to create dynamic, interactive web applications. Through hands-on projects and continuous learning, I’ve developed a deep understanding of its core concepts, including DOM manipulation, event handling, API integration, and modern ES6 features. Leveraging these skills, along with expertise in modern frameworks, I’m able to deliver polished, high-performance websites that offer seamless user experiences."
+            },
+            {
+                "technology": "TypeScript",
+                "description": "Though my experience with TypeScript is still evolving, I’ve gained a strong grasp of its principles, syntax, and the benefits it brings to front-end development. By integrating TypeScript into my projects, I’ve learned how its static typing and advanced features improve both code quality and maintainability, reducing errors and streamlining collaboration. I’m eager to continue deepening my knowledge of TypeScript, leveraging its capabilities to write more robust, scalable applications"
+            },
+            {
+                "technology": "CSS",
+                "description": "CSS can be quirky (and yes, even frustrating) at times, but that's part of its charm. Despite the occasional challenges, CSS is an essential component of web development, and I genuinely enjoy working with it. I’ve developed a solid grasp of its core concepts and principles, and for me, working with CSS is one of the most enjoyable and creative aspects of being a front-end web developer."
+            },
+            {
+                "technology": "Sass (scss)",
+                "description": "As a CSS enthusiast, I find the Sass pre-processor (.scss) to be an invaluable tool in my workflow. While I don’t frequently use Sass’s more advanced features like custom functions, I love its nesting capabilities, mixins, variables, and the convenience of prefixing parent selectors. Sass also provides a better structure for organizing my styles, making my work both more efficient and maintainable."
+            },
+            {
+                "technology": "HTML",
+                "description": "HTML is the fundamental building block of any website or web app. While its simplicity might cause some to overlook its importance, I deeply value its role in web development. I strive to write clean, semantic HTML that adheres to best practices, ensuring enhanced accessibility, a more organized markup, and improved technical SEO by leveraging the full potential of semantic HTML tags."
+            },
+            {
+                "technology": "WordPress",
+                "description": "WordPress, as the world's leading content management system, powers millions of websites globally, and my experience working within its ecosystem has been extensive. I am comfortable with the principles of WordPress theme and plugin development. Specifically, I have solid knowledge of classic theme development from scratch, including hooks, the template hierarchy, template tags, custom fields, custom post types, custom taxonomies, and custom queries. Additionally, I am familiar with the REST API and the fundamentals of WooCommerce. I have also gained experience with the block editor (Gutenberg) and have a good understanding of how block themes with full site editing work, along with a basic knowledge of custom block development."
+            },
+            {
+                "technology": "PHP",
+                "description": "Although I don't yet consider myself a backend or full-stack web developer, my proficiency in PHP, particularly within the WordPress ecosystem, is more than adequate. While I haven't built backends for web applications, I have a solid grasp of PHP's fundamentals, syntax, and even some of its nuances. This knowledge allows me to develop WordPress themes and plugins with ease."
+            }
+        ],
+        "workflow_tools": [
+            {
+                "title": "Workflow Tools"
+            },
+            {
+                "technology": "NPM & Project Build Tools",
+                "description": "In almost every project I've worked on, I've used NPM via the command line to manage workflow tools like Webpack, Parcel, and Vite, as well as various project-specific dependencies. This hands-on experience has helped me develop a deep understanding of these tools and their impact on development efficiency. By mastering them, I've honed my ability to produce clean, optimized code that adheres to industry standards."
+            },
+            {
+                "technology": "Version Control | Git & Github",
+                "description": "Like every developer should, I’ve immersed myself in version control with Git and GitHub, understanding their crucial role in modern software development. Through consistent use, I’ve gained proficiency in the fundamentals, allowing me to navigate repositories, track changes, and collaborate seamlessly. By harnessing the full potential of Git and GitHub, I ensure efficient teamwork, maintain clear version histories, and keep code changes organized across all my projects."
+            }
+        ],
+        "college_education": [
+            {
+                "title": "College Education"
+            },
+            {
+                "technology": "Python & Django",
+                "description": "Although my primary focus isn't on backend or full-stack development, I had the opportunity to work on a capstone project during my college studies, where I built a basic content management system using the Django framework in Python. While my expertise lies in front-end development, this experience has been invaluable in broadening my skill set and enhancing my adaptability to diverse technical challenges."
+            },
+            {
+                "technology": "SQL Databases",
+                "description": "While my expertise is primarily in front-end web development, my formal education has given me valuable knowledge in SQL databases and database design. Although I don't specialize in back-end development, my academic background has equipped me with a solid understanding of SQL/MySQL and the fundamentals of database design."
+            },
+            {
+                "technology": "Various Software Development Projects",
+                "description": "During my academic journey, I engaged in a wide variety of software development projects, including web applications, mobile apps, desktop software, and even video games. These experiences exposed me to multiple programming languages and environments such as Java, C, C#, Android Studio, Python, PHP, and JavaScript. By working hands-on with these diverse technologies, I strengthened my skills and versatility as a developer, equipping myself to face a broad range of challenges in the constantly evolving tech landscape."
+            }
+        ]
+    },
+    "services": {
+        "title": "Services",
+
+        "front_end_development": {
+            "title": "Front-end Web Development",
+            "heading": "Services in Detail:",
+            "details": [
+                "HTML & CSS / Sass",
+                "JavaScript & TypeScript",
+                "React",
+                "Web APIs",
+                "REST APIs",
+                "Code optimization",
+                "Unit testing"
+            ]
+        },
+        "css_specific_projects": {
+            "title": "CSS Specific Projects",
+            "heading": "Services in Detail:",
+            "details": [
+                "Figma conversion to HTML & CSS",
+                "Static website development",
+                "CSS Grid & Flexbox layout building",
+                "CSS bug fixes",
+                "CSS Keyframe animations",
+                "Responsive web design"
+            ]
+        },
+        "wordpress_development": {
+            "title": "WordPress Development",
+            "heading": "Services in Detail:",
+            "details": [
+                "Bespoke classic theme development",
+                "HTML/Figma to WordPress theme",
+                "Block theme development",
+                "WooCommerce development",
+                "Website tweaks w/ child theme",
+                "Plugin development",
+                "Custom block development"
+            ]
+        }
+    },
+    "portfolio": {
+        "section_heading": "My Project Portfolio",
+        "practice_projects": {
+            "subheading": "Practice Projects",
+            "projects": [
+                {
+                    "name": "Tic-Tac-Toe Game",
+                    "description": "A mini game built with vanilla JavaScript",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "Analog Clock",
+                    "description": "An analog clock built with vanilla JavaScript",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "Calorie Tracker App",
+                    "description": "A vanilla JS web app helping you track your daily calorie intake",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "Brain Trainer App",
+                    "description": "A React app for practicing your mathematical calculation skills",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "Todo App",
+                    "description": "A simple but effective React Todo app",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "Generic WordPress Theme",
+                    "description": "A partially completed project to get familiar with WordPress",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "My 2020 Capstone Project",
+                    "description": "A blogging CMS built with the Python Django framework.",
+                    "github": "Visit Github Repo"
+                },
+                {
+                    "name": "My Portfolio Website",
+                    "description": "This very website! Built with HTML, Sass & React.",
+                    "github": "Visit Github Repo"
+                }
+            ]
+        },
+        "gh_profile": "VISIT GITHUB PROFILE"
+    },
+
+    "contact": {
+        "label": "Petros Skoulas",
+        "section_heading": "Contact Me",
+        "contact_media_heading": "Connect With Me",
+        "email_label": "E-mail ",
+        "phone_label": "Mobile phone ",
+        "im_label": "Instant Messaging ",
+        "social_label": "Social Networks ",
+        "website": "Website ",
+        "form_use": "View Contact Form",
+        "form_heading": "Send me a message",
+        "form_name_label": "Your Name: ",
+        "form_name_placeholder": "Type your name here",
+        "form_email_label": "E-mail Address: ",
+        "form_email_placeholder": "email@domain.com",
+        "form_message_label": "Your Message: ",
+        "form_message_placeholder": "Type your message here",
+        "form_submit_label": "Send Message",
+        "form_cancel_label": "Cancel"
+    },
+
+    "footer": {
+        "backbtn": "Back to Top",
+        "copyright": "Petros Skoulas. All Rights Reserved."
+    },
+
+    "legal": {
+        "modal": {
+            "title": "Terms of Use 📋",
+            "par0": "Welcome to",
+            "par1": "Before proceeding, please review our [termsLink]. By using this website, you agree to these Terms of Use and our [privacyLink]. We may collect your personal information through the contact form, as outlined in our policies. By continuing, you consent to the collection, use, and sharing of your data in accordance with the Privacy Policy.",
+            "items": [
+                {
+                    "number": "1",
+                    "content": "<strong>Use of Content:</strong> The content on this website is for informational purposes only. You may not reproduce, modify, or distribute any part of the content without our prior written consent."
+                },
+                {
+                    "number": "2",
+                    "content": "<strong>Privacy Policy:</strong> Our Privacy Policy outlines how we collect, use, and protect your personal information. By using our website, you acknowledge and agree to our Privacy Policy."
+                },
+                {
+                    "number": "3",
+                    "content": "<strong>Disclaimer:</strong> The information provided on this website is for general informational purposes only. We make no representations or warranties of any kind, express or implied."
+                }
+            ],
+            "buttons": {
+                "accept": "Accept",
+                "decline": "Decline"
+            }
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "par0": "Welcome to",
+            "par1": "This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website or submit your information via the contact form.",
+            "items": [
+                {
+                    "title": "Information We Collect:",
+                    "content": "We may collect personal information such as your name, email address, and other contact details when you provide them through the contact form or other interactions on our website."
+                },
+                {
+                    "title": "How We Use Your Information:",
+                    "content": "We use the information we collect to provide and improve our services, respond to your inquiries, and communicate with you."
+                },
+                {
+                    "title": "Information Sharing:",
+                    "content": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent. However, we may share your information with trusted service providers who assist us in operating our website or conducting our business."
+                },
+                {
+                    "title": "Cookies:",
+                    "content": "We may use cookies and similar tracking technologies to enhance your experience on our website. You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly."
+                },
+                {
+                    "title": "Changes to This Privacy Policy:",
+                    "content": "We reserve the right to update or change our Privacy Policy at any time. Any changes will be effective immediately upon posting the updated Privacy Policy on this page."
+                },
+                {
+                    "title": "Contact Us:",
+                    "content": "If you have questions about this Privacy Policy or how your data is used, feel free to contact us at skoulasp@gmail.com."
+                }
+            ]
+        },
+        "terms": {
+            "title": "Terms of Use",
+            "par1": "Welcome to petros.skoulas.me. These Terms of Use govern your use of our website. By accessing or using our website, including submitting forms, you agree to abide by these terms.",
+            "items": [
+                {
+                    "title": "Use of Content:",
+                    "content": "The content on this website is for informational purposes only. You may view, download, and print pages from the website for your personal, non-commercial use only."
+                },
+                {
+                    "title": "Prohibited Activities:",
+                    "content": "You agree not to engage in any unauthorized or unlawful activities on our website, including but not limited to attempting to gain unauthorized access to our systems or networks, interfering with the proper functioning of the website, or violating any laws or regulations."
+                },
+                {
+                    "title": "Intellectual Property:",
+                    "content": "All content, trademarks, and other intellectual property rights on this website are the property of Petros Skoulas or their respective owners. You may not use, reproduce, or distribute any content from this website without prior written permission."
+                },
+                {
+                    "title": "Limitation of Liability:",
+                    "content": "We strive to provide accurate and up-to-date information on our website, but we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics contained on the website."
+                },
+                {
+                    "title": "Changes to Terms of Use:",
+                    "content": "We reserve the right to update or modify these Terms of Use at any time without prior notice. Your continued use of the website after any such changes constitutes your acceptance of the new terms."
+                },
+                {
+                    "title": "Contact Us:",
+                    "content": "If you have any questions or concerns about our Terms of Use, please contact us at skoulasp@gmail.com."
+                }
+            ]
+        },
+        "credits": {
+            "title": "Photo Credits",
+            "par1": "Thank you for visiting my portfolio website. I strive to ensure that all images used on this site comply with applicable licenses and regulations. While I've made every effort to use imagery that is free and labeled under Creative Commons licenses, I acknowledge that I may not have been able to trace the exact sources or provide attribution to individual creators for each image.",
+
+            "par2": "If you are the owner of any image featured on this website and would like it to be removed or properly credited, please accept my sincerest apologies. Your concerns are of utmost importance to me, and I am committed to resolving any issues promptly.",
+            "par3": "Please contact me via email at skoulasp@gmail.com with details about the image in question, and I will take immediate action to address your request.",
+            "par4": "Thank you for your understanding and cooperation."
+        }
+    }
+}

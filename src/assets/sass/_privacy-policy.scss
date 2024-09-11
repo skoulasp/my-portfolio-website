@@ -1,0 +1,66 @@
+div.privacy-policy {
+    background-image: radial-gradient(circle, #006361, #00655a, #006651, #006744, #006736);
+    color: #fff;
+    min-height: calc(100vh - 250px);
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+
+    div.privacy-content {
+        padding: 20px 0;
+        max-width: 80vw;
+        grid-column: 2 / 3;
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    div.btn-group {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-items: flex-start;
+        div.x-btn,
+        div.back-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: fit-content;
+            background-color: #2b2b2bad;
+            border-radius: 50%;
+            justify-self: center;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+                color: #fff;
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: #2b2b2b;
+            }
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    ::selection {
+        color: #fff;
+        background-color: #840039;
+    }
+}

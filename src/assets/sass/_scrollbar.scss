@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: 15px;
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #636363;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+    transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #959595;
+}

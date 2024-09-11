@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    height: 100%;
+    --heading-duration: 900ms;
+    --polaroid-img-duration: 700ms;
+    --text-cloud-duration: 700ms;
+    --btn-group-duration: 700ms;
+    --polaroid-img-delay: calc(var(--heading-duration) - 100ms);
+    --text-cloud-delay: calc(var(--heading-duration) - 200ms);
+    --btn-group-delay: calc(var(--heading-duration) - 200ms);
+    &:has(ul.mobile) {
+        overflow-y: hidden;
+    }
+
+    &.greek {
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+div#root {
+    min-height: 100% !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content minmax(max-content, 1fr) max-content;
+}
+
+div.container {
+    grid-row: 2 / 3;
+    height: max-content;
+}
+
+p:not(:last-child) {
+    margin-bottom: 10px;
+}

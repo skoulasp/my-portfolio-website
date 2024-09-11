@@ -1,0 +1,176 @@
+header#header.site-header {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    grid-row: 1 / 2;
+    background-color: #150401;
+    max-width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 0.3s ease;
+    &.fixed-permanent {
+        animation: blink 0.4s ease-in;
+        span {
+            animation: blinkAlt 0.3s linear;
+        }
+        span.top-left {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #26ff00;
+        }
+
+        span.top-left-vertical {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 20px;
+            background-color: #26ff00;
+        }
+        span.top-right {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #26ff00;
+        }
+        span.top-right-vertical {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 20px;
+            background-color: #26ff00;
+        }
+        span.bottom-left {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #26ff00;
+        }
+        span.bottom-left-vertical {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 20px;
+            background-color: #26ff00;
+        }
+        span.bottom-right {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #26ff00;
+        }
+        span.bottom-right-vertical {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 3px;
+            height: 20px;
+            background-color: #26ff00;
+        }
+    }
+
+    div.logo {
+        max-width: 100px;
+        z-index: 2;
+        transition: all 0.3s;
+        &:hover {
+            filter: contrast(130%) saturate(120%);
+        }
+    }
+
+    nav {
+        div.hamburger {
+            display: none;
+        }
+
+        ul.navbar {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            color: hsl(332, 100%, 94%);
+
+            li {
+                letter-spacing: 1px;
+                a {
+                    text-decoration: none;
+                    padding: 20px;
+                    color: inherit;
+                    text-transform: uppercase;
+                    transition: color 0.3s;
+                    &:hover {
+                        color: rgb(219, 54, 81);
+                    }
+                }
+                .lang-parent {
+                    color: hsl(332, 100%, 94%);
+                    font-weight: 700;
+                    border: none;
+                    outline: none;
+                    span {
+                        color: hsl(332, 100%, 94%);
+                    }
+                    a {
+                        display: inline-block;
+                        cursor: pointer;
+                        &.active {
+                            color: hsla(10, 100%, 85%, 0.9);
+                            transform: scale(1.1);
+                        }
+                        &:hover {
+                            color: rgb(219, 54, 81);
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-left: 20px;
+                }
+
+                &.active {
+                    a {
+                        color: hsla(10, 100%, 85%, 0.9);
+                    }
+                }
+            }
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+    }
+    ::selection {
+        color: rgb(255, 255, 255);
+        background-color: hsla(10, 64%, 62%, 1);
+    }
+}

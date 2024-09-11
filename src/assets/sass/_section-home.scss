@@ -1,0 +1,251 @@
+section.introduction {
+    background-image: linear-gradient(
+            0deg,
+            hsla(10deg, 57%, 75%, 0.9) 0%,
+            hsla(10deg, 58%, 74%, 0.9) 8%,
+            hsla(10deg, 58%, 73%, 0.9) 15%,
+            hsla(10deg, 59%, 72%, 0.9) 23%,
+            hsla(10deg, 60%, 71%, 0.9) 31%,
+            hsla(10deg, 60%, 70%, 0.9) 38%,
+            hsla(10deg, 61%, 69%, 0.9) 46%,
+            hsla(10deg, 61%, 67%, 0.9) 54%,
+            hsla(10deg, 62%, 66%, 0.9) 62%,
+            hsla(10deg, 63%, 65%, 0.9) 69%,
+            hsla(10deg, 63%, 64%, 0.9) 77%,
+            hsla(10deg, 64%, 63%, 0.9) 85%,
+            hsla(10deg, 64%, 62%, 0.9) 92%,
+            hsla(10deg, 65%, 61%, 0.9) 100%
+        ),
+        url("../img/polaroid.png");
+    background-repeat: no-repeat;
+    background-position: right 4% bottom 6%;
+    max-width: 100%;
+    padding: 50px;
+    padding-top: 150px;
+    min-height: 100dvh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+
+    & > * {
+        padding-bottom: 40px;
+    }
+    div.section-container {
+        max-width: 1400px;
+
+        div.heading-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+            h1 {
+                font-size: 2.8rem;
+                color: #ffe1ef;
+                text-shadow: 1px 1px 1px #000000;
+            }
+            img {
+                width: 55px;
+                height: auto;
+                margin-left: 10px;
+                filter: brightness(0.9) contrast(150%);
+            }
+        }
+
+        div.main-content {
+            border-radius: 22px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            column-gap: 60px;
+            div.cloud-and-btns {
+                flex: 0 3 auto;
+                max-width: 800px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: max-content 1fr max-content;
+                div.cloud {
+                    grid-column: 1 / -1;
+                    grid-row: 1 / 2;
+                    position: relative;
+                    justify-self: center;
+                    align-self: center;
+                    padding: 20px;
+                    border-radius: 20px;
+                    text-align: left;
+                    font-size: 1.4rem;
+                    align-self: baseline;
+                    background-color: #a56052;
+                    z-index: 0;
+                    perspective: 2000px;
+                    transform-style: preserve-3d;
+
+                    &::after {
+                        opacity: 1;
+                        content: "";
+                        background-color: #a56052;
+                        position: absolute;
+                        width: 71px;
+                        height: 65px;
+                        top: 90px;
+                        left: -36px;
+                        clip-path: polygon(50% 3%, 0% 60%, 100% 40%);
+                        transition: opacity 0.5s;
+                        filter: none;
+                        z-index: -1;
+                    }
+                    p {
+                        color: #ffe1ef;
+                    }
+                }
+            }
+            div.tilt-container {
+                position: relative;
+                align-self: center;
+                flex: 0 1 auto;
+                perspective: 2000px;
+                transform-style: preserve-3d;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #f7f7f7;
+                    backface-visibility: hidden;
+                    transition: transform 0.5s;
+                    transform: rotateY(180deg);
+                }
+
+                figure.image-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 350px;
+                    width: 100%;
+                    background-color: #f7f7f7;
+                    padding: 8%;
+                    gap: 10px;
+                    padding-bottom: calc(20% - 34px);
+                    border: 1px solid rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
+                    backface-visibility: hidden;
+
+                    img {
+                        background-color: #673fcd;
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+                    figcaption.image-caption {
+                        font-family: "ArchitectsDaughter", sans-serif;
+                    }
+                }
+            }
+
+            div.btn-group {
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex: 0 1 0;
+                margin-top: 80px;
+                gap: 40px;
+                max-width: 100%;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    gap: 8px;
+                    text-decoration: none;
+                    font-size: calc(18 / 16 * 1rem);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #fff;
+                    border-radius: 16px;
+                    width: fit-content;
+                    padding: 0.6em 1.1em;
+                    width: fit-content;
+                    white-space: nowrap;
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    justify-self: center;
+                    align-self: center;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
+                    &:hover {
+                        filter: brightness(1.25);
+                    }
+
+                    &.cta-contact {
+                        background-image: linear-gradient(
+                            0deg,
+                            hsl(252deg 82% 36%) 0%,
+                            hsl(253deg 82% 37%) 2%,
+                            hsl(255deg 82% 38%) 6%,
+                            hsl(256deg 82% 39%) 10%,
+                            hsl(257deg 81% 40%) 16%,
+                            hsl(259deg 81% 41%) 23%,
+                            hsl(260deg 81% 42%) 33%,
+                            hsl(262deg 81% 43%) 46%,
+                            hsl(263deg 81% 45%) 62%,
+                            hsl(264deg 80% 46%) 78%,
+                            hsl(265deg 80% 47%) 90%,
+                            hsl(267deg 80% 48%) 96%,
+                            hsl(269deg 80% 49%) 99%,
+                            hsl(270deg 80% 50%) 100%
+                        );
+                        border: 1px solid hsla(260, 59%, 38%, 0.5);
+                        &:active {
+                            background-image: linear-gradient(
+                                0deg,
+                                hsl(252deg 82% 36%) 0%,
+                                hsl(253deg 82% 37%) 0%,
+                                hsl(255deg 82% 38%) 1%,
+                                hsl(256deg 82% 39%) 2%,
+                                hsl(257deg 81% 40%) 5%,
+                                hsl(259deg 81% 41%) 9%,
+                                hsl(260deg 81% 42%) 18%,
+                                hsl(262deg 81% 43%) 85%,
+                                hsl(263deg 81% 45%) 93%,
+                                hsl(264deg 80% 46%) 97%,
+                                hsl(265deg 80% 47%) 99%,
+                                hsl(267deg 80% 48%) 100%,
+                                hsl(269deg 80% 49%) 100%,
+                                hsl(270deg 80% 50%) 100%
+                            );
+
+                            transform: scale(0.97);
+                            box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+
+                    &.cta-more {
+                        background-color: #c18611;
+                        border: 1px solid hsla(260, 59%, 38%, 0.5);
+                        &:active {
+                            transform: scale(0.97);
+                            box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ::selection {
+        color: #fff;
+        background-color: #b00000;
+    }
+}
+
+body.greek {
+    section.introduction div.section-container div.main-content div.tilt-container figure.image-container figcaption.image-caption {
+        font-family: "Mynerve", sans-serif;
+        font-weight: 700;
+    }
+}

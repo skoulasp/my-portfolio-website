@@ -1,0 +1,282 @@
+section.portfolio {
+    min-height: 100dvh;
+    background-image: linear-gradient(to top, hsla(272, 85%, 56%, 0.5), hsla(272, 84%, 33%, 0.7)), url("../img/v3.png"),
+        url("../img/v8.png");
+    background-color: hsla(272, 85%, 56%, 0.5);
+    display: grid;
+    background-attachment: fixed;
+    grid-template-rows: max-content 1fr;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    div.heading-section-portfolio {
+        grid-row: 1 / 2;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-image: linear-gradient(0deg, transparent 50%, hsla(272, 92%, 30%, 0.7) 50%);
+        background-size: 10px 10px;
+        background-color: hsla(271, 92%, 14%, 0.7);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Orbitron", sans-serif;
+        color: #ffe4ff;
+        h2 {
+            letter-spacing: 4px;
+            padding: 0;
+            margin: 0;
+            font-size: calc(32 / 16 * 1rem);
+            text-shadow: 1px 1px rgb(217, 22, 217);
+        }
+    }
+
+    article.content-wrapper {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
+        padding: 0 40px 0px 40px;
+        border-radius: 8px;
+        max-width: 1100px;
+        width: 100%;
+        color: #c2c2c2;
+        background-image: linear-gradient(
+            135deg,
+            hsl(0deg 0% 16%) 0%,
+            hsl(0deg 0% 16%) 8%,
+            hsl(0deg 0% 16%) 15%,
+            hsl(0deg 0% 16%) 23%,
+            hsl(0deg 0% 16%) 31%,
+            hsl(0deg 0% 16%) 38%,
+            hsl(0deg 0% 16%) 46%,
+            hsl(0deg 0% 16%) 54%,
+            hsl(0deg 0% 16%) 62%,
+            hsl(0deg 0% 17%) 69%,
+            hsl(0deg 0% 17%) 77%,
+            hsl(0deg 0% 17%) 85%,
+            hsl(0deg 0% 17%) 92%,
+            hsl(0deg 0% 17%) 100%
+        );
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+        h3.portfolio-subheading {
+            font-family: "Orbitron", sans-serif;
+            text-align: center;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            padding: 40px 0 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgb(117, 117, 117);
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                background-color: #00e5ff;
+                right: 30px;
+                bottom: 50%;
+                top: 50%;
+                vertical-align: middle;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                background-color: #ee00ff;
+                right: 0;
+                bottom: 50%;
+                top: 50%;
+                vertical-align: middle;
+            }
+        }
+
+        div.projects {
+            ul.projects-list {
+                list-style: none;
+                padding: 0;
+                display: grid;
+                width: 100%;
+                column-gap: 15px;
+                row-gap: 25px;
+                justify-items: center;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-rows: auto;
+                li.project {
+                    height: 100%;
+                    width: 100%;
+                    max-width: 250px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    background-color: rgb(67, 67, 67);
+
+                    figure {
+                        padding: 20px;
+                        padding-bottom: 0px;
+                        background-color: #f7f7f7;
+                        height: 240px;
+                        width: 100%;
+                        color: #000;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        div.proj-img {
+                            background-color: rgb(225, 118, 225);
+                            width: 100%;
+                            height: 100%;
+                            max-height: 166px;
+                            overflow: hidden;
+                            position: relative;
+
+                            &.img-8 {
+                                &::before {
+                                    content: "You Are Here";
+                                    color: #fff;
+                                    text-shadow: 1px 1px 2px #000;
+                                    position: absolute;
+                                    text-transform: uppercase;
+                                    inset: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                    transform: rotate(-40deg);
+                                    letter-spacing: 4px;
+                                    font-weight: 700;
+                                    font-family: "Orbitron", sans-serif;
+                                    z-index: 0;
+                                }
+                            }
+                        }
+
+                        figcaption {
+                            background-color: rgb(233, 255, 248);
+                        }
+                        div.github-repo {
+                            margin-bottom: 2px;
+                            a.link {
+                                letter-spacing: 2px;
+                                background-color: hsl(258, 100%, 32%);
+                                color: hsl(49, 100%, 72%);
+                                color: #fff;
+                                padding: 2px 5px;
+                                transition: all 0.2s;
+
+                                &:visited {
+                                    background-color: hsl(258, 100%, 32%);
+                                    color: hsl(266, 100%, 83%);
+                                }
+                                &:visited {
+                                    background-color: hsl(253, 100%, 40%);
+                                    color: hsl(57, 100%, 92%);
+                                }
+                                &:hover {
+                                    background-color: hsl(197, 100%, 28%);
+                                    color: hsl(169, 100%, 83%);
+                                    letter-spacing: 3px;
+                                }
+
+                                &:active {
+                                    background-color: hsl(166, 100%, 33%);
+                                    color: hsl(0, 0%, 91%);
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+                    div.project-category {
+                        min-height: 48px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .tictactoe,
+                .analog-clock,
+                .calorie-tracker,
+                .numbers-game,
+                .todo-app,
+                .thinkcreate,
+                .portfolio {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    &:active {
+                        filter: sepia(100%) blur(2px);
+                        transform: scale(1);
+                    }
+                }
+                .portfolio {
+                    position: relative;
+                    z-index: 1;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        cursor: not-allowed;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.greek {
+        font-family: "Arial", sans-serif;
+    }
+    hr.separator {
+        margin-top: 20px;
+        border-color: rgb(117, 117, 117);
+        height: 1px;
+    }
+
+    div.github-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        a.link {
+            color: rgb(194, 194, 194);
+            padding: 10px 15px;
+            background-color: #323232;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            transition: all 0.2s;
+            &:hover {
+                background-color: rgb(64, 64, 64);
+            }
+            &:active {
+                transform: scale(0.97);
+                background-color: rgb(55, 48, 72);
+            }
+        }
+    }
+    ::selection {
+        color: rgb(255, 255, 255);
+        background-color: rgb(153, 0, 107);
+    }
+}
+
+body.greek {
+    section.portfolio article.content-wrapper div.projects ul.projects-list li.project figure div.proj-img.img-8::before {
+        content: "Βρίσκεστε Εδώ";
+        font-family: "Roboto", sans-serif;
+    }
+}
