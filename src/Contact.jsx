@@ -20,7 +20,11 @@ const Contact = forwardRef(({ lang }, ref) => {
     }, [initialRender, isFormVisible]);
 
     const handleCaptchaChange = (value) => {
-        setCaptchaValue(value);
+        if (value) {
+            setCaptchaValue(value);
+        } else {
+            console.error("Captcha validation failed or was not completed.");
+        }
     };
 
     const formRef = useRef(null);
