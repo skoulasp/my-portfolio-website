@@ -10,6 +10,5 @@ export default defineConfig({
     css: {
         devSourcemap: true,
     },
-    // Add the assetsInclude option here
-    assetsInclude: ["**/*.JPG"],
+    assetsInclude: ["**/*.JPG", "**/*.pdf"],
 });
