@@ -14,23 +14,23 @@
         }
     },
     "home": {
-        "heading": "Hi 👋 I'm a Front-End Web Developer from Greece",
+        "heading": "Hi 👋 I'm a Web Developer from Greece",
         "image_caption": "Just a casual photo of me",
-        "cloud_text": "Hello and welcome! I’m a front-end web developer who loves building unique, beautiful web solutions that stand out. Let’s collaborate to make your web presence as beautiful as it deserves to be.",
+        "cloud_text": "Hello and welcome! I’m a web developer focused on building modern websites and web applications using Laravel and the core technologies of the web. I enjoy creating clean, reliable systems and user-friendly interfaces that help bring ideas to life.",
         "buttons": {
-            "contact": "Let's Connect",
+            "contact": "Get in Touch",
             "contact_emoji": "🤙",
-            "learn_more": "Who am I",
+            "learn_more": "About Me",
             "learn_more_emoji": "🔎"
         }
     },
     "about": {
         "heading": "About ⚡ Me",
         "paragraphs": [
-            "My name is Petros Skoulas, and I'm a junior front-end web developer from Greece. After completing my secondary education at the 9th General Lyceum of Amarousion, I pursued Information Technology (IT) studies at the American College of Greece - Deree, where I specialized in Software Development and I graduated in 2020. It was during my studies that I discovered my passion for web development, and since then, I have dedicated myself entirely to front-end web development.",
-            "Driven by a deep enthusiasm for crafting smooth, visually appealing, and intuitive web experiences, I immersed myself in mastering the core technologies of the modern web—HTML, CSS, and JavaScript. To stay current with the evolving front-end landscape, I adopted React, one of the leading front-end libraries, which has further refined my skills and ensured my adaptability in today’s fast-evolving tech ecosystem.",
-            "Given the widespread use of WordPress as the world’s leading CMS, I also invested time in understanding WordPress theme development. This expertise allows me to deliver custom solutions tailored to client needs while applying the best front-end web development practices. I’m highly committed to creating unique, custom WordPress themes that blend technical precision with creative design.",
-            "Equipped with a strong foundation and a constant desire to learn, I’m always eager to collaborate, tackle new challenges, and make meaningful contributions to the web development world."
+            "My name is Petros Skoulas, and I am a web developer from Greece. After completing my secondary education at the 9th General Lyceum of Amarousion, I pursued Information Technology (IT) studies at the American College of Greece – Deree, where I specialized in Software Development and graduated in 2020. During my studies, I developed a strong interest in web development and software systems, which led me to focus on building modern websites and web applications.",
+            "Over time, my focus has shifted toward backend-driven web development using PHP and Laravel. I enjoy designing and building complete web systems, from database structure and application logic to clean and responsive user interfaces. My goal is to create applications with clear architecture, maintainable code, and practical functionality that solves real problems.",
+            "Alongside Laravel development, I work with the core technologies of the web—HTML, CSS/SCSS, and JavaScript—often using lightweight tools such as Alpine.js to add interactivity where needed. Because WordPress remains the most widely used CMS on the web, I also work with WordPress when appropriate, including custom theme development, WooCommerce customization, and plugin modifications.",
+            "I am particularly interested in building clean, well-structured web applications and continuously improving my development workflow through real projects. My goal is to deliver reliable web solutions while constantly expanding my knowledge of modern web development practices."
         ],
         "buttons": {
             "services": "View Resume",
@@ -44,36 +44,36 @@
                 "title": "Core Technologies"
             },
             {
-                "technology": "React",
-                "description": "Although I'm still relatively new to React, I've quickly grasped its core concepts, including React hooks, the JSX syntax, and component-based architecture. I’m confident in my ability to use React effectively in my projects and continue to deepen my expertise with each new endeavor. In fact, this portfolio website was built with React, and I have no regrets about choosing it."
-            },
-            {
-                "technology": "JavaScript",
-                "description": "JavaScript is the foundation of front-end web development, empowering developers to create dynamic, interactive web applications. Through hands-on projects and continuous learning, I’ve developed a deep understanding of its core concepts, including DOM manipulation, event handling, API integration, and modern ES6 features. Leveraging these skills, along with expertise in modern frameworks, I’m able to deliver polished, high-performance websites that offer seamless user experiences."
-            },
-            {
-                "technology": "TypeScript",
-                "description": "Though my experience with TypeScript is still evolving, I’ve gained a strong grasp of its principles, syntax, and the benefits it brings to front-end development. By integrating TypeScript into my projects, I’ve learned how its static typing and advanced features improve both code quality and maintainability, reducing errors and streamlining collaboration. I’m eager to continue deepening my knowledge of TypeScript, leveraging its capabilities to write more robust, scalable applications"
-            },
-            {
-                "technology": "CSS",
-                "description": "CSS can be quirky (and yes, even frustrating) at times, but that's part of its charm. Despite the occasional challenges, CSS is an essential component of web development, and I genuinely enjoy working with it. I’ve developed a solid grasp of its core concepts and principles, and for me, working with CSS is one of the most enjoyable and creative aspects of being a front-end web developer."
-            },
-            {
-                "technology": "Sass (scss)",
-                "description": "As a CSS enthusiast, I find the Sass pre-processor (.scss) to be an invaluable tool in my workflow. While I don’t frequently use Sass’s more advanced features like custom functions, I love its nesting capabilities, mixins, variables, and the convenience of prefixing parent selectors. Sass also provides a better structure for organizing my styles, making my work both more efficient and maintainable."
-            },
-            {
-                "technology": "HTML",
-                "description": "HTML is the fundamental building block of any website or web app. While its simplicity might cause some to overlook its importance, I deeply value its role in web development. I strive to write clean, semantic HTML that adheres to best practices, ensuring enhanced accessibility, a more organized markup, and improved technical SEO by leveraging the full potential of semantic HTML tags."
-            },
-            {
-                "technology": "WordPress",
-                "description": "WordPress, as the world's leading content management system, powers millions of websites globally, and my experience working within its ecosystem has been extensive. I am comfortable with the principles of WordPress theme and plugin development. Specifically, I have solid knowledge of classic theme development from scratch, including hooks, the template hierarchy, template tags, custom fields, custom post types, custom taxonomies, and custom queries. Additionally, I am familiar with the REST API and the fundamentals of WooCommerce. I have also gained experience with the block editor (Gutenberg) and have a good understanding of how block themes with full site editing work, along with a basic knowledge of custom block development."
+                "technology": "Laravel",
+                "description": "Laravel is the framework I currently focus on most for building modern backend-driven web applications. I enjoy its elegant architecture, expressive syntax, and the powerful tools it provides for developing maintainable systems. Through building real projects, including a custom CMS, I have gained practical experience with routing, controllers, Blade templating, database design with Eloquent ORM, authorization policies, validation, and application structure. Laravel allows me to build complete web systems with clear architecture and strong separation between application logic and presentation."
             },
             {
                 "technology": "PHP",
-                "description": "While my primary expertise lies in front-end development, I have significantly advanced my proficiency in PHP, particularly within the WordPress ecosystem. As I work toward becoming a full-stack developer, PHP has become the language I am most focused on mastering. My solid understanding of PHP's fundamentals, syntax, and nuances enables me to efficiently develop and customize WordPress themes and plugins, and I am eager to expand this knowledge further into backend web development."
+                "description": "PHP is the core language behind much of the modern web, and it forms the foundation of my backend development work. My focus is on writing clean, structured PHP code while leveraging modern development practices. Working with Laravel has significantly deepened my understanding of PHP, including object-oriented programming, application architecture, and how backend systems interact with databases and web interfaces."
+            },
+            {
+                "technology": "HTML",
+                "description": "HTML is the fundamental building block of any website or web application. While its simplicity might cause some to overlook its importance, I deeply value its role in web development. I strive to write clean, semantic HTML that follows best practices, improving accessibility, maintainability, and technical SEO through well-structured markup."
+            },
+            {
+                "technology": "CSS",
+                "description": "CSS can be quirky (and occasionally frustrating), but it remains one of the most creative aspects of web development. I enjoy crafting clean layouts, responsive designs, and polished interfaces while keeping styles organized and maintainable. A solid understanding of CSS fundamentals allows me to build interfaces that are both visually appealing and technically sound."
+            },
+            {
+                "technology": "Sass (scss)",
+                "description": "As part of my styling workflow, I use the Sass preprocessor (.scss) to keep styles modular and maintainable. Features such as nesting, variables, and mixins help structure larger stylesheets more effectively while keeping the codebase easier to manage as projects grow."
+            },
+            {
+                "technology": "JavaScript",
+                "description": "JavaScript enables dynamic behavior and interactivity on the web. I primarily use it to enhance user interfaces and improve user experience through DOM manipulation, event handling, and asynchronous requests. In many projects I prefer lightweight solutions, such as Alpine.js, which integrate well with server-rendered applications."
+            },
+            {
+                "technology": "WordPress",
+                "description": "WordPress remains the most widely used content management system on the web, and I have experience working within its ecosystem when projects require it. I am comfortable with custom theme development, the template hierarchy, hooks, custom fields, custom post types, custom taxonomies, and custom queries. I also have experience with WooCommerce customization and a solid understanding of how WordPress can be extended to meet specific client requirements."
+            },
+            {
+                "technology": "React",
+                "description": "Earlier in my development journey I explored React and gained experience with its component-based architecture, JSX syntax, and hooks. While my current focus has shifted toward backend-driven applications using Laravel, my familiarity with React helped strengthen my understanding of modern JavaScript development and frontend component architecture."
             }
         ],
         "workflow_tools": [
@@ -95,11 +95,11 @@
             },
             {
                 "technology": "Python & Django",
-                "description": "Although my primary focus isn't on backend or full-stack development, I had the opportunity to work on a capstone project during my college studies, where I built a basic content management system using the Django framework in Python. While my expertise lies in front-end development, this experience has been invaluable in broadening my skill set and enhancing my adaptability to diverse technical challenges."
+                "description": "During my university studies I had the opportunity to work with the Django framework in Python as part of a capstone project, where I built a basic content management system. This experience introduced me to key backend development concepts such as MVC-style architecture, database interaction, and server-side application design. Although my current focus is primarily on PHP and Laravel, working with Django helped strengthen my understanding of backend web development and web application architecture."
             },
             {
                 "technology": "SQL Databases",
-                "description": "While my expertise is primarily in front-end web development, my formal education has given me valuable knowledge in SQL databases and database design. Although I don't specialize in back-end development, my academic background has equipped me with a solid understanding of SQL/MySQL and the fundamentals of database design."
+                "description": "Database design and data management are essential parts of modern web applications. Through both my academic studies and practical development work, I have developed a solid understanding of SQL databases, relational data modeling, and query design. In my current projects, particularly with Laravel and Eloquent ORM, I regularly work with database structures, migrations, and queries to build reliable and well-structured application backends."
             },
             {
                 "technology": "Various Software Development Projects",
@@ -111,41 +111,41 @@
         "title": "Services",
 
         "front_end_development": {
-            "title": "Front-end Web Development",
+            "title": "Laravel Web Development",
             "heading": "Services in Detail:",
             "details": [
-                "HTML & CSS / Sass",
-                "JavaScript & TypeScript",
-                "React",
-                "Web APIs",
-                "REST APIs",
-                "Code optimization",
-                "Unit testing"
+                "Custom Laravel web applications",
+                "Backend architecture & database design",
+                "Blade templating & server-rendered UIs",
+                "REST API development",
+                "Authentication & authorization systems",
+                "App optimization & perf. improvements",
+                "Debugging, maintenance & feature dev."
             ]
         },
         "css_specific_projects": {
-            "title": "CSS Specific Projects",
+            "title": "CSS & Frontend UI Projects",
             "heading": "Services in Detail:",
             "details": [
-                "Figma conversion to HTML & CSS",
+                "Figma / design to HTML & CSS",
                 "Static website development",
-                "CSS Grid & Flexbox layout building",
-                "CSS bug fixes",
-                "CSS Keyframe animations",
-                "Responsive web design"
+                "Modern layout systems",
+                "CSS debugging and layout fixes",
+                "CSS animations and micro-interactions",
+                "Responsive and mobile-first design"
             ]
         },
         "wordpress_development": {
             "title": "WordPress Development",
             "heading": "Services in Detail:",
             "details": [
-                "Bespoke classic theme development",
-                "HTML/Figma to WordPress theme",
-                "Block theme development",
-                "WooCommerce development",
-                "Website tweaks w/ child theme",
+                "Custom classic theme development",
+                "Figma / HTML to WordPress theme conversion",
+                "Theme customization using child themes",
+                "WooCommerce development & customization",
                 "Plugin development",
-                "Custom block development"
+                "Block theme development",
+                "Custom Gutenberg block development"
             ]
         }
     },

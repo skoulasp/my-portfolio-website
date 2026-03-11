@@ -1,7 +1,7 @@
 import { forwardRef, useContext, useRef } from "react";
 import { LanguageContext } from "./App";
 import { motion, useScroll, useTransform } from "framer-motion";
-import ResumePDF from "../Petros_Skoulas_FrontEnd_Developer_Resume.pdf";
+import ResumePDF from "../Petros_Skoulas_Web_Developer_Resume.pdf";
 
 const About = forwardRef((props, ref) => {
     const data = useContext(LanguageContext);

@@ -24,7 +24,7 @@ function Header({ lang, setLang, activeSection, setActiveSection, introAnimation
                 setIsMobileNavActive(false);
             }
         },
-        [isMobileNavActive]
+        [isMobileNavActive],
     );
 
     useEffect(() => {

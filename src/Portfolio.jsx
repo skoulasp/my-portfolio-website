@@ -144,14 +144,14 @@ const Portfolio = forwardRef(({ lang }, ref) => {
                         <li className="project project4">
                             <figure>
                                 <div className="proj-img img-3">
-                                    <a href="http://wp.skoulas.me/" target="_blank" rel="noreferrer">
+                                    <span className="project-link-disabled" aria-disabled="true">
                                         <img
                                             src={WordPress}
                                             srcSet={`${WordPress} 1x, ${WordPress2x} 2x, ${WordPress3x} 3x`}
                                             alt="Calorie Tracker app"
                                             className="calorie-tracker"
                                         />
-                                    </a>
+                                    </span>
                                 </div>
                                 <figcaption>{data.portfolio.practice_projects.projects[5].name}</figcaption>
                                 <div className="github-repo">
@@ -165,14 +165,14 @@ const Portfolio = forwardRef(({ lang }, ref) => {
                         <li className="project project6">
                             <figure>
                                 <div className="proj-img img-3">
-                                    <a href="http://thinkcreate.skoulas.me:8080/" target="_blank" rel="noreferrer">
+                                    <span className="project-link-disabled" aria-disabled="true">
                                         <img
                                             src={thinkcreate}
                                             srcSet={`${thinkcreate} 1x, ${thinkcreate2x} 2x, ${thinkcreate3x} 3x`}
                                             alt="THINKCREATE Django CMS"
                                             className="thinkcreate"
                                         />
-                                    </a>
+                                    </span>
                                 </div>
                                 <figcaption>{data.portfolio.practice_projects.projects[6].name}</figcaption>
                                 <div className="github-repo">
@@ -186,14 +186,14 @@ const Portfolio = forwardRef(({ lang }, ref) => {
                         <li className="project project7">
                             <figure>
                                 <div className="proj-img img-8">
-                                    <a target="_blank" rel="noreferrer">
+                                    <span className="project-link-disabled project-link-current" aria-disabled="true">
                                         <img
                                             src={portfolio}
                                             srcSet={`${portfolio} 1x, ${portfolio2x} 2x, ${portfolio3x} 3x`}
                                             alt="My Portfolio Website"
                                             className="portfolio"
                                         />
-                                    </a>
+                                    </span>
                                 </div>
                                 <figcaption>{data.portfolio.practice_projects.projects[7].name}</figcaption>
                                 <div className="github-repo">

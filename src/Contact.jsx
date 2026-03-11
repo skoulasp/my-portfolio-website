@@ -5,6 +5,8 @@ import emailjs from "emailjs-com";
 
 const Contact = forwardRef(({ lang }, ref) => {
     const data = useContext(LanguageContext);
+    const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+    const isRecaptchaConfigured = Boolean(recaptchaSiteKey);
     const [isFormVisible, setIsFormVisible] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -64,6 +66,11 @@ const Contact = forwardRef(({ lang }, ref) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!isRecaptchaConfigured) {
+            alert("reCAPTCHA is not configured. Please set VITE_RECAPTCHA_SITE_KEY.");
+            return;
+        }
 
         if (formState["username"]) {
             console.warn("Bot detected! Form submission aborted.");
@@ -380,12 +387,18 @@ const Contact = forwardRef(({ lang }, ref) => {
                                 </fieldset>
                             </div>
                             <div className="ReCAPTCHA">
-                                <ReCAPTCHA
-                                    sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                                    ref={recaptcha}
-                                    onChange={handleCaptchaChange}
-                                    disabled={isSubmitting}
-                                />
+                                {isRecaptchaConfigured ? (
+                                    <ReCAPTCHA
+                                        sitekey={recaptchaSiteKey}
+                                        ref={recaptcha}
+                                        onChange={handleCaptchaChange}
+                                        disabled={isSubmitting}
+                                    />
+                                ) : (
+                                    <p className="recaptcha-config-error">
+                                        reCAPTCHA is unavailable. Set <code>VITE_RECAPTCHA_SITE_KEY</code> in your environment.
+                                    </p>
+                                )}
                             </div>
                             <div className="btn-group">
                                 <button

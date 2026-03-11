@@ -57,24 +57,37 @@ section.services {
             color: #fff;
             transition: 0.5s;
             &.wordpress {
-                background-image: linear-gradient(rgba(26, 72, 129, 0.7), rgba(26, 72, 129, 0.7)), url("../img/webdev.png");
+                background-image:
+                    url("../img/woo.svg"), linear-gradient(rgba(26, 72, 129, 0.7), rgba(26, 72, 129, 0.7)), url("../img/webdev.png");
                 background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
+                background-size: 120px, contain, contain;
+                background-position:
+                    97% 95%,
+                    center,
+                    center;
             }
 
             &.react {
-                background-image: linear-gradient(rgba(45, 45, 45, 0.7), rgba(45, 45, 45, 0.7)), url("../img/react-bg.jpg");
+                background-image:
+                    url("../img/alpine.js.svg"), url("../img/blade.svg"), linear-gradient(rgba(240, 83, 64, 0.7), rgba(148, 34, 22, 0.7)),
+                    url("../img/react-bg.jpg");
                 background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                background-size: 120px, 120px, cover, cover;
+                background-position:
+                    1% 95%,
+                    99% 95%,
+                    center,
+                    center;
             }
 
             &.css {
-                background-image: url("../img/tailwind.png"), linear-gradient(rgba(130, 0, 147, 0.5), rgba(130, 0, 147, 0.5)),
-                    url("../img/random.jpg");
+                background-image:
+                    url("../img/tailwind.png"), linear-gradient(rgba(130, 0, 147, 0.5), rgba(130, 0, 147, 0.5)), url("../img/random.jpg");
                 background-repeat: no-repeat;
-                background-position: 97% 95%, center, center;
+                background-position:
+                    97% 95%,
+                    center,
+                    center;
                 background-size: 120px, cover, cover;
             }
 
@@ -92,25 +105,34 @@ section.services {
                 }
 
                 &.wordpress {
-                    background-image: linear-gradient(rgba(26, 72, 129, 0.8), rgba(26, 72, 129, 0.8)), url("../img/wordpress.png"),
-                        url("../img/php.png");
+                    background-image:
+                        linear-gradient(rgba(26, 72, 129, 0.8), rgba(26, 72, 129, 0.8)), url("../img/wordpress.png"), url("../img/php.png");
                     background-repeat: no-repeat;
-                    background-position: 98% 50%, 2% 50%;
-                    background-size: auto, auto 90%, auto 90%;
+                    background-position:
+                        98% 50%,
+                        2% 50%;
+                    background-size:
+                        auto,
+                        auto 90%,
+                        auto 90%;
                 }
 
                 &.react {
-                    background-color: rgba(45, 45, 45);
-                    background-image: url("../img/react2.png"), url("../img/javascript3.png");
+                    background-color: rgb(121, 12, 0);
+                    background-image: url("../img/laravel.svg"), url("../img/javascript.png");
                     background-repeat: no-repeat;
-                    background-position: 2% 50%, 98% 50%;
-                    background-size: 90px;
+                    background-position:
+                        2% 50%,
+                        98% 50%;
+                    background-size: 90px, 100px;
                 }
                 &.css {
                     background-color: rgb(130, 0, 147);
                     background-image: url("../img/sass.png"), url("../img/css.png");
                     background-repeat: no-repeat;
-                    background-position: 3% 50%, 97% 50%;
+                    background-position:
+                        3% 50%,
+                        97% 50%;
                     background-size: 105px, 75px;
                 }
             }
@@ -134,7 +156,7 @@ section.services {
                     }
 
                     &.react {
-                        background-color: rgba(45, 45, 45, 0.8);
+                        background-color: rgba(191, 27, 9, 0.8);
                     }
                     &.css {
                         background-color: rgba(130, 0, 147, 0.8);

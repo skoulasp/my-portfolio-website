@@ -1,5 +1,6 @@
 import { forwardRef, useContext } from "react";
 import ReactImg from "./assets/img/react.png";
+import LaravelImg from "./assets/img/laravel.svg";
 import JavaScriptImg from "./assets/img/javascript.png";
 import TypeScriptImg from "./assets/img/typescript.png";
 import CSSImg from "./assets/img/css.png";
@@ -29,14 +30,14 @@ const TechStack = forwardRef(({ lang }, ref) => {
                     <h3 className="skills core">{data.tech_stack.core_technologies[0].title}</h3>
                     <span className="style-after"></span>
                 </div>
-                <Skillsbox technology={"React"} img={ReactImg} paragraph={data.tech_stack.core_technologies[1].description} />
-                <Skillsbox technology={"JavaScript"} img={JavaScriptImg} paragraph={data.tech_stack.core_technologies[2].description} />
-                <Skillsbox technology={"TypeScript"} img={TypeScriptImg} paragraph={data.tech_stack.core_technologies[3].description} />
+                <Skillsbox technology={"Laravel"} img={LaravelImg} paragraph={data.tech_stack.core_technologies[1].description} />
+                <Skillsbox technology={"PHP"} img={PHPImg} paragraph={data.tech_stack.core_technologies[2].description} />
+                <Skillsbox technology={"HTML"} img={HTMLImg} paragraph={data.tech_stack.core_technologies[3].description} />
                 <Skillsbox technology={"CSS"} img={CSSImg} paragraph={data.tech_stack.core_technologies[4].description} />
                 <Skillsbox technology={"Sass (scss)"} img={SassImg} paragraph={data.tech_stack.core_technologies[5].description} />
-                <Skillsbox technology={"HTML"} img={HTMLImg} paragraph={data.tech_stack.core_technologies[6].description} />
+                <Skillsbox technology={"JavaScript"} img={JavaScriptImg} paragraph={data.tech_stack.core_technologies[6].description} />
                 <Skillsbox technology={"WordPress"} img={WordPressImg} paragraph={data.tech_stack.core_technologies[7].description} />
-                <Skillsbox technology={"PHP"} img={PHPImg} paragraph={data.tech_stack.core_technologies[8].description} />
+                <Skillsbox technology={"React"} img={ReactImg} paragraph={data.tech_stack.core_technologies[8].description} />
             </article>
             <article className="secondary-skills">
                 <div className="heading3-wrapper">

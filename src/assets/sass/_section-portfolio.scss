@@ -1,7 +1,7 @@
 section.portfolio {
     min-height: 100dvh;
-    background-image: linear-gradient(to top, hsla(272, 85%, 56%, 0.5), hsla(272, 84%, 33%, 0.7)), url("../img/v3.png"),
-        url("../img/v8.png");
+    background-image:
+        linear-gradient(to top, hsla(272, 85%, 56%, 0.5), hsla(272, 84%, 33%, 0.7)), url("../img/v3.png"), url("../img/v8.png");
     background-color: hsla(272, 85%, 56%, 0.5);
     display: grid;
     background-attachment: fixed;
@@ -139,23 +139,40 @@ section.portfolio {
                             overflow: hidden;
                             position: relative;
 
-                            &.img-8 {
-                                &::before {
-                                    content: "You Are Here";
+                            .project-link-disabled {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+
+                                &:active::before {
+                                    content: "Live demo unavailable";
                                     color: #fff;
-                                    text-shadow: 1px 1px 2px #000;
-                                    position: absolute;
+                                    background-color: hsla(269, 100%, 50%, 0.425);
+                                    text-shadow:
+                                        0 0 3px #000,
+                                        0 0 6px #000,
+                                        2px 2px 4px #000;
                                     text-transform: uppercase;
+                                    position: absolute;
                                     inset: 0;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
                                     height: 100%;
-                                    transform: rotate(-40deg);
                                     letter-spacing: 4px;
                                     font-weight: 700;
+                                    font-size: 0.9rem;
                                     font-family: "Orbitron", sans-serif;
-                                    z-index: 0;
+                                    z-index: 1;
+                                }
+
+                                &.project-link-current:active::before {
+                                    content: "You Are Here";
+                                }
+
+                                &:active,
+                                &:active * {
+                                    cursor: not-allowed;
                                 }
                             }
                         }
@@ -222,15 +239,12 @@ section.portfolio {
                         transform: scale(1);
                     }
                 }
-                .portfolio {
-                    position: relative;
-                    z-index: 1;
+                .project-link-disabled {
                     &:hover {
                         cursor: pointer;
                     }
                     &:active {
                         cursor: not-allowed;
-                        opacity: 0;
                     }
                 }
             }
