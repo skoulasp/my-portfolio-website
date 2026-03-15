@@ -60,7 +60,7 @@ function App() {
             const newTitle = urlHash.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
             document.title = `Petros Skoulas | ${newTitle}`;
         } else {
-            document.title = `Petros Skoulas | Front-End Web Developer`;
+            document.title = `Petros Skoulas | Laravel & Web Application Developer`;
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [window.location.hash]);
@@ -191,7 +191,7 @@ function App() {
                         onDecline={handleDeclineTerms}
                         lang={language}
                     />,
-                    document.body
+                    document.body,
                 )}
         </LanguageContext.Provider>
     );
