@@ -28,6 +28,7 @@ const About = forwardRef((props, ref) => {
                             <p>{data.about.paragraphs[1]}</p>
                             <p>{data.about.paragraphs[2]}</p>
                             <p>{data.about.paragraphs[3]}</p>
+                            <p>{data.about.paragraphs[4]}</p>
                         </motion.div>
                     </div>
 

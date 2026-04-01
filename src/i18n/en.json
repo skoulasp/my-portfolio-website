@@ -28,9 +28,14 @@
         "heading": "About ⚡ Me",
         "paragraphs": [
             "My name is Petros Skoulas, and I am a web developer from Greece. After completing my secondary education at the 9th General Lyceum of Amarousion, I pursued Information Technology (IT) studies at the American College of Greece – Deree, where I specialized in Software Development and graduated in 2020. During my studies, I developed a strong interest in web development and software systems, which led me to focus on building modern websites and web applications.",
-            "Over time, my focus has shifted toward backend-driven web development using PHP and Laravel. I enjoy designing and building complete web systems, from database structure and application logic to clean and responsive user interfaces. My goal is to create applications with clear architecture, maintainable code, and practical functionality that solves real problems.",
-            "Alongside Laravel development, I work with the core technologies of the web—HTML, CSS/SCSS, and JavaScript—often using lightweight tools such as Alpine.js to add interactivity where needed. Because WordPress remains the most widely used CMS on the web, I also work with WordPress when appropriate, including custom theme development, WooCommerce customization, and plugin modifications.",
-            "I am particularly interested in building clean, well-structured web applications and continuously improving my development workflow through real projects. My goal is to deliver reliable web solutions while constantly expanding my knowledge of modern web development practices."
+
+            "I work extensively with the core technologies of the web, including HTML, CSS/SCSS, and JavaScript, building clean, responsive interfaces and structured frontends. I prioritize simplicity and maintainability, applying JavaScript thoughtfully to enhance interactivity while keeping the overall system lightweight and easy to reason about.",
+
+            "My primary focus is backend-driven web development using PHP and Laravel. I build complete web applications, handling everything from data modeling and application logic to structured and responsive interfaces. I prioritize clean architecture, maintainable codebases, and solutions that are reliable and scalable over time.",
+
+            "I also work with WordPress as a development platform, focusing on custom theme development using both classic and modern block-based approaches. This includes Advanced Custom Fields (ACF), WooCommerce customization, and plugin development. I build structured, maintainable solutions with a strong understanding of both traditional PHP-based theming and modern block architecture, choosing the appropriate approach based on each project’s needs.",
+
+            "I am particularly interested in building clean, well-structured web applications and continuously improving my development workflow through real projects. My goal is to deliver reliable web solutions while constantly expanding my understanding of modern web development practices."
         ],
         "buttons": {
             "services": "View Resume",
