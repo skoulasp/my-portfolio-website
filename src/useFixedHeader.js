@@ -83,11 +83,17 @@ function useFixedHeader(headerRef) {
 
         const isPortfolioModalOpen = () => document.body.classList.contains("portfolio-modal-open");
 
+        const resetHideState = () => {
+            hiding = false;
+            setIsHiding(false);
+            headerRef.current?.classList.remove("slideOut");
+        };
+
         const handleMouseEnter = () => {
             if (isPortfolioModalOpen() || isFixedPermanent || isMobile || isTablet) return;
             if (!headerRef.current.classList.contains("fixed")) return;
             clearTimeouts();
-            if (headerRef.current.classList.contains("fixed") && headerRef.current.classList.contains("slideOut") && hiding) {
+            if (hiding || headerRef.current.classList.contains("slideOut")) {
                 cancelHideHeader();
             }
         };
@@ -176,6 +182,7 @@ function useFixedHeader(headerRef) {
         const handleMouseMove = (event) => {
             if (isPortfolioModalOpen()) {
                 clearTimeouts();
+                resetHideState();
                 return;
             }
 
@@ -231,7 +238,7 @@ function useFixedHeader(headerRef) {
             document.removeEventListener("visibilitychange", handleVisibilityChange);
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [headerRef, isFixed, isFixedPermanent, isMobile]);
+    }, [headerRef, isFixed, isFixedPermanent, isMobile, isTablet]);
 
     return { isFixed, setIsFixed, isFixedPermanent, isSlidingIn, setIsSlidingIn, isHiding, isFixedActive };
 }
