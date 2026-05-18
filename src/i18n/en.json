@@ -199,7 +199,53 @@
                     "description": "This very website! Built with HTML, Sass & React.",
                     "github": "Visit Github Repo"
                 }
-            ]
+            ],
+            "future_projects": [
+                {
+                    "name": "Custom Laravel CMS",
+                    "description": "ThinkCreate V2: A full-stack Laravel CMS.",
+                    "github": "Visit Github Repo",
+                    "alt": "ThinkCreate v2 Laravel CMS admin dashboard",
+                    "preview_label": "View Custom Laravel CMS screenshot",
+                    "screenshot_alts": ["ThinkCreate v2 Laravel CMS admin dashboard"]
+                },
+                {
+                    "name": "Noir Kitchen",
+                    "description": "A polished restaurant website concept",
+                    "github": "View Screenshots",
+                    "alt": "Noir Kitchen restaurant website hero section",
+                    "screenshot_alts": [
+                        "Noir Kitchen desktop hero section",
+                        "Noir Kitchen desktop about section",
+                        "Noir Kitchen desktop menu section",
+                        "Noir Kitchen desktop gallery section",
+                        "Noir Kitchen desktop reservation section"
+                    ]
+                },
+                {
+                    "name": "Vaultex",
+                    "description": "A cybersecurity SaaS website concept",
+                    "github": "View Screenshots",
+                    "alt": "Vaultex cybersecurity SaaS landing page hero section",
+                    "screenshot_alts": [
+                        "Vaultex desktop hero section",
+                        "Vaultex desktop pricing section",
+                        "Vaultex desktop testimonials section",
+                        "Vaultex desktop call to action section",
+                        "Vaultex mobile hero view"
+                    ]
+                }
+            ],
+            "placeholder_project": {
+                "name": "Unknown Project",
+                "description": "Future project placeholder",
+                "github": "Coming Soon"
+            }
+        },
+        "controls": {
+            "previous_projects": "Show previous project page",
+            "next_projects": "Show next project page",
+            "close_modal": "Close"
         },
         "gh_profile": "VISIT GITHUB PROFILE"
     },

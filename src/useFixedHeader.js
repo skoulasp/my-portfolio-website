@@ -81,8 +81,10 @@ function useFixedHeader(headerRef) {
         };
         clearTimeouts();
 
+        const isPortfolioModalOpen = () => document.body.classList.contains("portfolio-modal-open");
+
         const handleMouseEnter = () => {
-            if (isFixedPermanent || isMobile || isTablet) return;
+            if (isPortfolioModalOpen() || isFixedPermanent || isMobile || isTablet) return;
             if (!headerRef.current.classList.contains("fixed")) return;
             clearTimeouts();
             if (headerRef.current.classList.contains("fixed") && headerRef.current.classList.contains("slideOut") && hiding) {
@@ -91,14 +93,14 @@ function useFixedHeader(headerRef) {
         };
 
         const showHeader = () => {
-            if (isFixedPermanent || isMobile || isTablet || isFixed || hiding) return;
+            if (isPortfolioModalOpen() || isFixedPermanent || isMobile || isTablet || isFixed || hiding) return;
             clearTimeouts();
             setIsSlidingIn(true);
             setIsFixed(true);
         };
 
         const hideHeader = () => {
-            if (isFixedPermanent || isMobile || isTablet || hiding) return;
+            if (isPortfolioModalOpen() || isFixedPermanent || isMobile || isTablet || hiding) return;
             if (scrollY >= 100) {
                 hiding = true;
 
@@ -120,7 +122,7 @@ function useFixedHeader(headerRef) {
         };
 
         const cancelHideHeader = (cursorWithinHeader = true) => {
-            if (isFixedPermanent || isMobile || isTablet) return;
+            if (isPortfolioModalOpen() || isFixedPermanent || isMobile || isTablet) return;
             hiding = false;
             setIsHiding(false);
             setIsFixed(true);
@@ -134,6 +136,7 @@ function useFixedHeader(headerRef) {
         };
 
         const handleMouseLeave = () => {
+            if (isPortfolioModalOpen()) return;
             if (!isFixedPermanent && isFixed && !isMobile && !isTablet && window.scrollY < 100) {
                 setIsFixed(false);
             }
@@ -143,6 +146,7 @@ function useFixedHeader(headerRef) {
         };
 
         const handleHeaderClick = (e) => {
+            if (isPortfolioModalOpen()) return;
             if (e.target.closest("ul, .logo") || isMobile || isTablet) return;
             if (!isFixedPermanent) {
                 setIsFixedPermanent((prevIsFixedPermanent) => {
@@ -170,6 +174,11 @@ function useFixedHeader(headerRef) {
         };
 
         const handleMouseMove = (event) => {
+            if (isPortfolioModalOpen()) {
+                clearTimeouts();
+                return;
+            }
+
             cursorWithinHeader = event.target.closest("header");
             if (isFixedPermanent || isMobile || isTablet || hiding) return;
             const scrollY = window.scrollY;
@@ -195,6 +204,7 @@ function useFixedHeader(headerRef) {
         };
 
         const handleScroll = () => {
+            if (isPortfolioModalOpen()) return;
             if (!isFixedPermanent && !isMobile && !isTablet && window.scrollY < 1) {
                 cancelHideHeader(cursorWithinHeader);
                 clearTimeouts();

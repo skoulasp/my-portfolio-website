@@ -201,7 +201,53 @@
                     "description": "Το παρόν site. Αναπτύχθηκε με HTML, Sass και React",
                     "github": "Προβολή @ Github"
                 }
-            ]
+            ],
+            "future_projects": [
+                {
+                    "name": "Custom Laravel CMS",
+                    "description": "ThinkCreate V2: Ένα full-stack Laravel CMS.",
+                    "github": "Προβολή @ Github",
+                    "alt": "Πίνακας διαχείρισης του Laravel CMS ThinkCreate v2",
+                    "preview_label": "Προβολή screenshot για το Custom Laravel CMS",
+                    "screenshot_alts": ["Πίνακας διαχείρισης του Laravel CMS ThinkCreate v2"]
+                },
+                {
+                    "name": "Noir Kitchen",
+                    "description": "Concept ιστοσελίδας για εστιατόριο",
+                    "github": "Προβολή Εικόνων",
+                    "alt": "Hero section της ιστοσελίδας εστιατορίου Noir Kitchen",
+                    "screenshot_alts": [
+                        "Hero section του Noir Kitchen σε desktop",
+                        "About section του Noir Kitchen σε desktop",
+                        "Menu section του Noir Kitchen σε desktop",
+                        "Gallery section του Noir Kitchen σε desktop",
+                        "Reservation section του Noir Kitchen σε desktop"
+                    ]
+                },
+                {
+                    "name": "Vaultex",
+                    "description": "Concept SaaS ιστοσελίδας κυβερνοασφάλειας",
+                    "github": "Προβολή Εικόνων",
+                    "alt": "Hero section της SaaS ιστοσελίδας κυβερνοασφάλειας Vaultex",
+                    "screenshot_alts": [
+                        "Hero section του Vaultex σε desktop",
+                        "Pricing section του Vaultex σε desktop",
+                        "Testimonials section του Vaultex σε desktop",
+                        "Call to action section του Vaultex σε desktop",
+                        "Mobile hero view του Vaultex"
+                    ]
+                }
+            ],
+            "placeholder_project": {
+                "name": "Άγνωστο Project",
+                "description": "Placeholder για μελλοντικό project",
+                "github": "Προσεχώς"
+            }
+        },
+        "controls": {
+            "previous_projects": "Προβολή προηγούμενης σελίδας projects",
+            "next_projects": "Προβολή επόμενης σελίδας projects",
+            "close_modal": "Κλείσιμο"
         },
         "gh_profile": "ΕΠΙΣΚΕΨΗ ΠΡΟΦΙΛ GITHUB"
     },
